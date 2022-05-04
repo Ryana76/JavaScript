@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript const</h1>
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+    <p id="demo"></p>
+
+    <script>
+        //Creare un array
+        const car =["Saab","Volvo", "BMW"];
+
+        //Cambiare un elements
+        car[0]="Toyota";
+
+        //aggiungere un element
+        car.push("Audi");
+
+        document.getElementById("demo").innerHTML = car;
+    </script>
+    
+</body>
+</html>
