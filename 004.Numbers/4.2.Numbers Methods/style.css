@@ -13,8 +13,8 @@ p{
 p:hover{
     position: sticky;
     border: 10px solid gray;
-    font-size: 3em;
-    width: 50%;
+    font-size: 2em;
+    width: 100%;
     opacity: .7;
     background-color: pink;
     color: black;
