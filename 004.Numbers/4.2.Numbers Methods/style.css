@@ -14,7 +14,7 @@ p:hover{
     position: sticky;
     border: 10px solid gray;
     font-size: 3em;
-    width: 100%;
+    width: 50%;
     opacity: .7;
     background-color: pink;
     color: black;
