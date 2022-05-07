@@ -1,0 +1,23 @@
+p{
+    border: 3px solid pink;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    width: 30%;
+    padding: 2%;
+    color: azure;
+    background-color: gray;
+    border-radius: 20px;
+    font-size: 1.5em;
+    transition: background-color .5s, font-size .5s, width .5s, opacity .5s, border .5s, color .5s, padding .5s, border-radius .5s;
+}
+p:hover{
+    position: sticky;
+    border: 10px solid gray;
+    font-size: 3em;
+    width: 100%;
+    opacity: .7;
+    background-color: pink;
+    color: black;
+    padding: 4%;
+    border-radius: 40px;
+}
