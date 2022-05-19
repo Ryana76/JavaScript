@@ -1,0 +1,33 @@
+*{box-sizing: border-box;}
+
+
+
+div.box{
+    border: 3px solid rgb(251, 124, 145);
+    background-color: pink;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+div.box > div{
+    background-color: rgb(255, 226, 231);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+div.scrip{
+    background-color: rgb(252, 244, 244);
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+div.scrip:hover{
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 166, 181);
+}
