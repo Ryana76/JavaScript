@@ -1,21 +1,21 @@
 *{box-sizing: border-box;}
+h2{text-align: center;}
 
-
-
-div.box{
+div.grid-container{
     border: 3px solid rgb(251, 124, 145);
     background-color: pink;
     padding: 20px;
     display: grid;
+    grid-template-columns: auto;
     gap: 10px;
     margin-bottom: 30px;
     border-radius: 20px;
 }
-div.box > div{
+div.grid-container > div{
     background-color: rgb(255, 226, 231);
     padding: 20px;
-    font-size: 20px;
     border-radius: 20px;
+    border: 2px solid rgb(251, 124, 145);
 }
 div.scrip{
     background-color: rgb(252, 244, 244);
@@ -24,10 +24,28 @@ div.scrip{
     width: fit-content;
     color: black;
     transition: background-color 0.5s, color 0.5s;
-    cursor: pointer;
+    cursor: pointer;    
+    border: 1px solid rgb(251, 124, 145);;
 }
 
 div.scrip:hover{
     background-color: rgb(80, 80, 80);
     color: rgb(255, 166, 181);
+}
+
+@media screen and (min-width:850px) {
+    div.grid-container{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width:1400px) {
+    div.grid-container{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (min-width:1900px) {
+    div.grid-container{
+        grid-template-columns: auto auto auto auto;
+    }
 }
