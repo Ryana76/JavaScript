@@ -25,12 +25,46 @@ div.scrip{
     color: black;
     transition: background-color 0.5s, color 0.5s;
     cursor: pointer;    
-    border: 1px solid rgb(251, 124, 145);;
+    border: 1px solid rgb(251, 124, 145);
 }
 
 div.scrip:hover{
     background-color: rgb(80, 80, 80);
     color: rgb(255, 166, 181);
+}
+
+button{
+    margin: 12px;
+    float: right;
+    background-color: gray;
+    border: 3px solid pink;
+    border-radius: 30px;
+    color: pink;
+    padding: 15px;
+    box-shadow: 5px 0px 1px rgb(214, 214, 214),
+                -5px 0px 1px rgb(214, 214, 214),
+                7px 0px 1px gray,
+                -7px 0px 1px gray,
+                -9px 0px 1px rgb(255, 255, 255),
+                -9px 0px  1px rgb(255, 255, 255);
+    transition: box-shadow .5s;
+}
+button:hover{
+    animation-name: button-anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    box-shadow: 0 0 0 0;
+}
+@keyframes button-anim{
+    from{
+        background-color: rgb(167, 166, 166);
+    }
+    to{
+        background-color: pink;
+        color: gray;
+        border: 3px solid gray;
+    }
 }
 
 @media screen and (min-width:850px) {
