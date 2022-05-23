@@ -79,6 +79,7 @@ document.getElementById("ex6").innerHTML = html6 +
 "<br>!(num1(6) < 10 || num2(3) > 1): " + !(num6_1 < 10 || num6_2 > 1) ;
 
 
+
 let header7 = "<h2>-Ex7-</h2>";
 let title7 = "<h3>JavaScript Comparison</h3>";
 let para7 = "<p>Input your age and click the button:</p>";
@@ -98,4 +99,49 @@ function myFunction7(){
     let risult7 = (age7 < 18) ? "Too young" : "Old enough";
     document.getElementById("quest7").innerHTML = "your age is: " +
     age7 + "<br>" + risult7 + " to vote.";
+}
+
+
+
+let header8 = "-Ex8-";
+let title8 = "JavaScript Comparison";
+let html8 = `<h2>${header8}</h2>
+            <h3>${title8}</h3>`;
+document.getElementById("ex8").innerHTML = html8 +
+"2 < 12 : " + (2<12)+
+"<br>2 < \"12\" : " + (2<"12")+
+"<br>2 < \"Johnny\" : " + (2<"Johnny")+
+"<br>2 > \"Johnny\" : " + (2>"Johnny")+
+"<br>2 == \"Johnny\" : " + (2=="Johnny")+
+"<br>\"2\" < \"12\" : " + ("2"<"12")+
+"<br>\"2\" > \"12\" : " + ("2">"12")+
+"<br>\"2\" == \"12\" : " + ("2"=="12");
+
+
+
+let header9 = "<h2>-Ex9-</h2>";
+let title9 = "<h3>JavaScript Comparison</h3>";
+let para9 = "<p>Input your age and click the button:</p>";
+let inputBox9 = `<input id="ageInput9" value=""/>`;
+let buttonBox9 = `<button type="button" 
+                    onclick="myFunction9()">
+                        Try it</button>`;
+let html9 = `${header9}
+            ${title9}
+            ${para9}
+            ${inputBox9}
+            ${buttonBox9}
+            <p id="quest9"></p>`;
+document.getElementById("ex9").innerHTML = html9;
+function myFunction9(){
+    let age9 = document.getElementById("ageInput9").value;
+    let risult9;
+    // let risult9 = (age9 < 18) ? "Too young" : "Old enough";
+    if (isNaN(age9)) {
+        risult9 = "Input is not a number";
+    } else {
+        risult9 = (age9 < 18) ? "Too young" : "Old enough";
+    }
+    document.getElementById("quest9").innerHTML = "your age is: " +
+    age9 + "<br>" + risult9 + " to vote.";
 }
