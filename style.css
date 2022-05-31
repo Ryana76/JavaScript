@@ -10,6 +10,7 @@ html{
 
 
 div.grid-container{
+    min-width: 300px;
     margin: 100px;
     border: 3px solid rgb(174, 174, 174);
     background-color: rgb(239, 239, 239);
@@ -37,6 +38,7 @@ div.grid-container > div{
                 -1px 0px 5px lightgrey;
 }
 div.scrip{
+    margin: 10px;
     position: relative;
     width: 70%;
     background-color: rgb(239, 239, 239);
@@ -63,7 +65,6 @@ div.scrip:hover{
 
 button{
     min-width: 20%;
-    overflow: hidden;
     position: absolute;
     right: 10px;
     bottom: 10px;
@@ -112,7 +113,7 @@ button:active{
     }
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:1000px) {
     div.grid-container{
         grid-template-columns: 48.8% 48.8%;
     }
