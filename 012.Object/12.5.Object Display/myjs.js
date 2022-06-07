@@ -26,3 +26,23 @@ const person6 = {
 }
 let myString6 = JSON.stringify(person6);
 document.getElementById("ex6").innerHTML = myString6;
+
+
+const person7 = {
+    name: "Aryana",
+    age: function() {return 25;}
+};
+document.getElementById("ex7").innerHTML = JSON.stringify(person7);
+
+const person8 = {
+    name: "Aryana",
+    age: function() {return 25;}
+};
+
+person8.age =person8.age.toString();
+
+document.getElementById("ex8").innerHTML = JSON.stringify(person8);
+
+const arr9 = ["John", "Peter", "Sally", "Jane"];
+let myString9 = JSON.stringify(arr9);
+document.getElementById("ex8").innerHTML = myString9;
