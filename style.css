@@ -64,10 +64,9 @@ div.scrip:hover{
 }
 
 button{
+    margin: auto;
     min-width: 20%;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+    position: relative;
     background-color: rgb(67, 169, 247);    
     border: 3px solid rgb(255, 255, 255);
     border-radius: 30px;
@@ -80,7 +79,6 @@ button{
     transition: box-shadow .1s;
 }
 button:hover{
-    overflow: hidden;
     background-color: white;
     color: rgb(67, 169, 247);
     border: 3px solid white;
@@ -101,6 +99,11 @@ button:active{
                 0px -3px 10px rgb(208, 208, 208),
                 3px 0px 10px rgb(208, 208, 208),
                 -3px 0px 10px rgb(208, 208, 208);
+}
+.grid-container > div, .scrip::after, button{
+    display: table;
+    content: "";
+    clear: both;
 }
 @keyframes button-anim{
     from{
