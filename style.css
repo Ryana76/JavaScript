@@ -64,7 +64,7 @@ div.scrip:hover{
 }
 
 button{
-    margin: auto;
+    margin: 10px auto;
     min-width: 20%;
     position: relative;
     background-color: rgb(67, 169, 247);    
