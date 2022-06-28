@@ -36,7 +36,7 @@ try{
     number3.toPrecision(500);
 }
 catch(err){
-    document.getElementById("ex3").innerHTML =err.name ;
+    document.getElementById("ex3").innerHTML = err.name ;
 }
 
 
@@ -44,12 +44,18 @@ let number4 = 5;
 try {
     x = y + 1;
 } catch (error) {
-    document.getElementById("ex4").innerHTML =error.name ;    
+    document.getElementById("ex4").innerHTML = error.name ;    
 }
 
 
 try {
     eval("alert('Hello)")
 } catch (error) {    
-    document.getElementById("ex5").innerHTML =error.name ;    
+    document.getElementById("ex5").innerHTML = error.name ;    
 }
+
+
+let x = 5 * 15;
+console.log(x);
+debugger;
+document.getElementById("ex6").innerHTML =x;    
