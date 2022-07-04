@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(34, 33, 41); color: rgba(255, 255, 255, 0.71); height: 3000px;">
+    <div class="CSS DOM">
+        <h1>JavaScript HTML DOM</h1>
+        <p>Changing the HTML style:</p>
+        <p>Hello World!</p>
+        <p id="p1">Hello World!</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1 id="idh1">My Heading 1</h1>
+        <button onclick="document.getElementById('idh1').style.color = 'red'">Clicca qui!</button>
+    </div>
+
+    <hr>
+
+    <div id="iddive2">
+        <div id="demo">
+            <p>Some text!!!</p>
+            <p>Some text!!!</p>
+            <p>Some text!!!</p>
+            <p>Some text!!!</p>    
+        </div>
+        <input type="button" value="text hide" onclick="document.getElementById('demo').style.display = 'block'">
+        <input type="button" value="text show" onclick="document.getElementById('demo').style.display = 'none'">
+    </div>
+    <script src="myjs.js"></script>
+</body>
+</html>

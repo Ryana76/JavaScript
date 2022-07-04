@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body onload="checkCookies()" style="height: 3000px;"> -->
+<body onload="myMessage()" style="height: 3000px;">
+    <div class="ex1">
+        <h1>JavaScript HTML Events</h1>
+        <h2 onclick="this.innerHTML = `Oooops!`">Click on this text!</h2>
+    </div>
+
+    <hr>
+
+    <div class="ex2">
+        <h1>JavaScript HTML Events</h1>
+        <h2 id="demo" onclick="myFunction(this)">Click on this text!</h2>
+    </div>
+
+    <hr>
+
+    <div class="ex3">
+        <h1>JavaScript HTML Events</h1>
+        <h2 id="demo2">Click the button to display the date.</h2>
+        <button  onclick="displayDate()">What thime is it?</button>
+    </div>
+
+    <hr>
+
+    <div class="ex4">
+        <h1>JavaScript HTML Events</h1>
+        <h2 id="demo4">Click the button to display the date.</h2>
+        <button id="myBtn">What thime is it?</button>
+    </div>
+
+    <hr>
+
+    <div class="ex5">
+        <h1>JavaScript HTML Events</h1>
+        <p id="demo5"></p>
+    </div>
+
+    <hr>
+
+    <div class="ex6">
+        <h1>JavaScript HTML Events</h1>
+        <form action="#none">
+            <label for="fname">Enter your name: </label>
+            <input type="text" name="fname" id="fname" onchange="upperCase()">
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="ex7">
+        <h1>JavaScript HTML Events</h1>
+        <div  onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Mouse Over Me</div>
+    </div>
+
+    <hr>
+
+    <div class="ex8">
+        <h1>JavaScript HTML Events</h1>
+        <div style="background-color:#D94A38;width:120px;height:20px;padding:40px;" onmouseup="myUp(this)" onmousedown="myDown(this)">Click Me</div>
+    </div>
+
+    <hr>
+
+    <div class="ex9">
+        <h1>JavaScript HTML Events</h1>
+        <img id="myimg" src="bulboff.gif" alt="off" onmousedown="lightOn()" onmouseup="lightOff()">
+        <p>Click mouse and hold down!</p>
+    </div>
+
+    <hr>
+
+    <div class="ex10">
+        <h1>JavaScript HTML Events</h1>
+        <form action="#none">
+            <label for="fname">Enter your first name: </label>
+            <input type="text" onfocus="myFunction(this)">
+        </form>
+        <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+    </div>
+
+    <hr>
+
+    <div class="ex11">
+        <h1 onmouseover="style.color=`red`" onmouseout="style.color=`black`">Mouse over this text</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="myjs.js"></script>
+</body>
+</html>
