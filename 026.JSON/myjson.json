@@ -1,0 +1,9 @@
+{
+    "name":"Aryana",
+    "age":25,
+    "car":[
+        "Fiat",
+        "BMW",
+        "Volvo"
+    ] 
+}
